@@ -13,7 +13,7 @@ app.get("/user", verifyToken, controllers.getUserById);
 app.post("/register", controllers.register);
 app.post("/login", controllers.login);
 
-app.listen(5005, () => {
+app.listen(5005, () => { 
     console.log('SERVIDOR LEVANTADO');
     db();
 });

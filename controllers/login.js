@@ -20,7 +20,7 @@ const login = async (req, res) => {
         };
 
         const token = jwt.sign(data, "secreto", {
-          expiresIn: 1000 /* 1 min */,
+          expiresIn: 60 /* tiempo */,
         });
 
         res.json({
